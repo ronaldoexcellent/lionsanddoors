@@ -1,0 +1,90 @@
+/* Styles */
+/* Import All Your Stylesheets First */
+/* You can add variables to :root */
+
+:root {
+    --f-index: 0;
+    --full: 100%;
+    --glue: fixed;
+    --dB: block;
+    --abs: absolute;
+}
+
+application {
+    width: var(--full);
+    height: var(--full);
+    position: var(--glue);
+    top: var(--f-index);
+    left: 0;
+} layout {
+    width: var(--full);
+    height: var(--full);
+    position: var(--abs);
+    top: var(--f-index);
+    left: var(--f-index);
+    overflow: auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+} /*
+@keyframes throw-in {
+    0% {
+        transform: translateX(200%) translateY(-150%);
+    } 30% {
+        transform: translateX(160%) translateY(0%) rotate(-1600deg);
+    } 50% {
+        transform: translateX(120%) translateY(-100%) rotate(-1000deg);
+    } 70% {
+        transform: translateX(70%) translateY(0%) rotate(-600deg);
+    } 80% {
+        transform: translateX(30%) translateY(-50%) rotate(0deg);
+    } 100% {
+        transform: translateX(0%) translateY(0%) rotate(0deg);
+    }
+}
+*/
+
+#canvas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #2196F3;
+    padding: 3%;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+} #canvas div {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+    border: 3px solid black;
+}
+#game-board {
+    height: 70%;
+    position: fixed;
+    display: grid; /*grid*/
+    justify-items: center;
+    background-color: darkgrey;
+    border: black;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    line-height: 0;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 30px;
+    box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.4);
+    transition: .5s;
+    animation: p .5s;
+} @keyframes p {
+    0% {
+        transform: translate(0, 0);
+    } to {
+        transform: translate(-50%, -50%);
+    }
+} 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<application name="Lions and Doors Game" author="Ronaldo Excellent" logo="" theme="purple" mode="" projectstart="Monday, 7th August, 2023" projectend="">
+  <data>
+    <meta charset="UTF-8" />
+    <meta-name viewport="width=device-width, initial-scale=1">
+    <meta-http-equiv>
+  </data>
+
+  <layout>
+    <h1>Hello World!</h1>
+    <span id="p1-name">Player 1:</span>
+    <input type="radio" />
+    <div class="pcon">
+      <img class="p1" width="20px" height="20px" src="files/images/p1.png" />
+    </div>
+
+    <span id="p2-name">Player 2:</span>
+    <input type="radio" />
+    <div class="pcon">
+      <img disabled class="p2" width="20px" height="20px" src="files/images/p2.png" />
+    </div>
+
+    <button class="roll">Roll</button>
+
+    <section id="canvas" align="center"></section>
+  
+      <section id="game-board">
+        <br>
+        <div class="dice-container"></div>
+        <h1>0</h1>
+      </section>
+    </section>
+  </layout>
+
+  <engine>
+    <script src="js/components/codejs.cjs"></script>
+  </engine>
+</application>
